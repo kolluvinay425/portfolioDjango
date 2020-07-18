@@ -27,7 +27,7 @@ SECRET_KEY = 'x(m70o2gz+zm$v+fcqt6^&a1@)+y6!kl^$wlyz*873(r@z)9de'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','localhost','kvinay.herokuapp.com' ]
 
 
 # Application definition
