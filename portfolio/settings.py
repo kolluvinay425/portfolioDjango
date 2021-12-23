@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import django_heroku
 import dj_database_url
-from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +26,7 @@ SECRET_KEY = 'x(m70o2gz+zm$v+fcqt6^&a1@)+y6!kl^$wlyz*873(r@z)9de'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost','kvinay.herokuapp.com' ]
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'kvinay.herokuapp.com']
 
 
 # Application definition
@@ -131,8 +130,7 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 django_heroku.settings(locals())
-
